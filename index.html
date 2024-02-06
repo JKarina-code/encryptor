@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encryptor</title>
+    <link rel="icon" href="assets/padlock.jpg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="main__logo">
+        <img src="assets/logo.svg" alt="" />
+      </section>
+      <section class="main__text">
+        <textarea
+          class="main__textarea"
+          name="message"
+          id="messageInput"
+          placeholder="Enter text here"
+        ></textarea>
+
+        <div class="main__footer__buttons">
+          <p class="main__alert">
+            <img src="assets/alert.svg" alt="" />
+            Only lowercase letters and no accents.
+          </p>
+          <div class="main__buttons">
+            <button class="main__button main__button__primary" id="encrypt">
+              Encrypt
+            </button>
+            <button class="main__button main__button__secondary" id="decrypt">
+              Decrypt
+            </button>
+          </div>
+        </div>
+      </section>
+      <aside class="container__aside">
+        <section class="aside__content" id="containerMessage">
+          <div class="aside__img">
+            <img src="assets/person.svg" alt="person no message" />
+          </div>
+          <div class="aside__text__none">
+            <h2 class="aside__h2">No message was found</h2>
+            <p class="aside__p">
+              Enter the text you want to encrypt or decrypt.
+            </p>
+          </div>
+        </section>
+        <section class="aside__content" id="containerResult">
+          <div class="aside__message">
+            <p class="aside__message__result" id="encryptMessage"></p>
+          </div>
+          <button class="main__button main__button__secondary" id="buttonCopy">
+            Copy
+          </button>
+        </section>
+      </aside>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
