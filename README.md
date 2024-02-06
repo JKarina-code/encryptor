@@ -1,3 +1,9 @@
+<div align="center"><img src="assets/one.png" width="200"/></div>
+
+
+
+# 🚀 Challenge Encryptor | Oracle + Alura
+
 # Encryptor and decrypt text 🔏
 Project to encrypt and decrypt text. Encryption is done by replacing vowels with a specific set of rules. The application only accepts lowercase letters, no special characters or accents are allowed.
 
